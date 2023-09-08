@@ -16,7 +16,7 @@ According to section [4.4 Language of Property Values](https://iiif.io/api/prese
 
 > Language **MAY** be associated with strings that are intended to be displayed to the user for the `label` and `summary` properties, plus the `label` and `value` properties of the `metadata` and `requiredStatement` objects.
 
-Given this, we have the following `label` propert that could be contained within a Manifest, Collection, or Canvas.
+Given this, we have the following `label` property that could be contained within a Manifest, Collection, or Canvas.
 
 ```json
 {
