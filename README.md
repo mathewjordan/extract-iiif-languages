@@ -8,7 +8,7 @@ To enhance user experience and provide language options in user interfaces, we w
 
 ## Proposed solution
 
-Create reusable functionality that will analyze provided resources and provide back all possible language codes as an array. Support could include fetching options using IIIF Commons packages and Presentation 2.x -> 3.0 upgrade ability of resources as well.
+Create reusable functionality that will analyze provided resources and provide back all possible language codes as an array. Support could include fetching options using IIIF Commons packages and Presentation 2.x → 3.0 upgrade ability of resources as well.
 
 ### Why?
 
@@ -51,20 +51,14 @@ Given a case where a Manifest has `ar` (Arabic), `en` (English) as possible code
 
 ```tsx
 const iiifContent = "https://api.dc.library.northwestern.edu...";
-
 const options = {
   // to be determined
 };
 
 const data = extractIIIFLanguages(manifest, options);
-
 const { languageCodes, info } = data;
 
 console.log(languageCodes);
-```
 
-Outputing:
-
-```js
-["en", "ar", "none"];
+// output: ["ar", "en", "none"]
 ```
